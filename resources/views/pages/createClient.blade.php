@@ -349,6 +349,8 @@
                      </div>
 
                      <div class=" card-footer text-right alert-warning">
+                        <a href="{{ route('fichepdf') }}"  class="btn btn-info btn-sm">PDF</a>
+                        <a href="{{ route('ficheclt',['id'=>1]) }}"  class="btn btn-info btn-sm">Imprimer</a>
                          <a href="{{ route('client') }}"  class="btn btn-secondary btn-sm ">Retour liste</a>
                          {{--  <button type="button" class="btn btn-primary btn-sm ">Annuler</button>  --}}
                          <button type="submit" class="btn btn-success btn-sm">Valider</button>
@@ -688,6 +690,7 @@
                  </div>
 
                  <div class=" card-footer text-right alert-warning">
+
                      <a href="{{ route('client') }}"  class="btn btn-secondary btn-sm">Retour liste</a>
                      <a href="{{ route('client.create') }}"  class="btn btn-danger btn-sm ">Annuler</a>
                      {{--  <button type="button" class="btn btn-primary btn-sm ">Annuler</button>  --}}

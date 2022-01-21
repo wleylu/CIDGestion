@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ClientController;
 use App\Http\Controllers\ActiviteController;
+use App\Http\Controllers\FicheClientContoller;
 use App\Http\Controllers\QuartierController;
 
 
@@ -54,6 +55,9 @@ Route::middleware(['auth'])->group(function () {
          Route::get('/client/{id}/edit',[ClientController::class,'edit'])->name('client.edit');
          Route::post('/client/{id}',[ClientController::class,'update'])->name('client.update');
          Route::get('/client/delete/{id}',[ClientController::class,'destroy'])->name('client.delete');
+         Route::get('fiche/{id}', [FicheClientContoller::class,'show'])->name('ficheclt');
+         Route::get('fichepdf', [FicheClientContoller::class,'index'])->name('fichepdf');
+
          /*fin routtes des   clients*/
 
 
