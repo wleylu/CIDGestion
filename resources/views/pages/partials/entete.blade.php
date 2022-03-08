@@ -7,7 +7,7 @@ integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxV
            {{--  {{ __('Dashboard CID') }} --}}
             <ul class="flex text-base" >
                 <li class="mr-6 ">
-                  <a class=" text-blue-500 hover:text-blue-800 " href="{{ route("register") }}">Utilisateur</a>
+                  <a class=" text-blue-500 hover:text-blue-800 " href="{{ route("ulisateurs") }}">Utilisateur</a>
                 </li>
                 <li class="mr-6 dropdown">
                     <div class="dropdown">
